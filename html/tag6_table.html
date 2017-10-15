@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>table</title>
+
+    <style>
+        table {
+            border-collapse: collapse;
+            border: double blue 3px;
+            background-color: paleturquoise;
+            position: relative;
+        }
+
+        tr:first-child {
+            background-color: aliceblue;
+
+        }
+
+        th,
+        td {
+            width: 1000px;
+        }
+
+        #Pidge,
+        td {
+            position: relative;
+            left: 0px;
+            transition: all 0.5s linear;
+        }
+
+        #Pidge:hover,
+        td:hover {
+            background-color: lightcoral
+            position: relative;
+            left: 100px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table border>
+        <!--      table row-->
+        <tr>
+            <!--          table heading-->
+            <th>Name</th>
+            <th>Phone</th>
+
+        </tr>
+        <tr>Pidge</tr>
+        <td id="Pidge"> Pidge</td>
+        <td>111111111111111111111</td>
+
+        <tr>
+            <td id="Shiro"> Shiro</td>
+            <td>1222222</td>
+        </tr>
+        <tr>
+            <td>Lance</td>
+            <td>5555555555</td>
+        </tr>
+        <tr>
+            <td>Keith</td>
+            <td>9999999</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
