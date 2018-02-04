@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        * {
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        form {
+            padding: 10px 20px;
+        }
+        label {
+            width: 117px;
+            display: inline-block;
+            text-align: right;
+        }
+        
+        fieldset {
+            padding: 25px;
+        }
+        
+        textarea {
+            width: 100%;
+            padding: 10px;
+        }
+        
+        #btnarea {
+            text-align: right;
+        }
+        
+        #btn {
+            padding: 10px 20px;
+            background-color: skyblue;
+            font-size: 1.2em;
+        }
+        .radio {
+            margin-right: 5px;
+            margin-left: 5px;
+        }
+        .inp {
+            width: 400px;
+            height: 44px;
+        }
+        legend {
+            font-size: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Payment Information</legend>
+            <label for="">Name</label>
+            <input class='inp' type="text" name='username'>
+            <br>
+            <br>
+            <label for="">Email</label>
+            <input class='inp' type="email" name='password'>
+            <br>
+            <br>
+            <label for="">Phone</label>
+            <input class='inp' type="tel" name='password'>
+            <br>
+            <br>
+            <label for="">City: </label>
+            <select class='inp' name="" id="">
+                <option value="on">Toronto</option>
+                <option value="sk">London</option>
+                <option value="sk">Windsor</option>
+            </select>
+            <br>
+            <br>
+            <label for="">Payment Options:  </label>
+            <input class='radio' type="radio" name="Payment" value="pizza">Master Card
+            <input class='radio' type="radio" name="Payment" value="Hamburger">Visa Card
+            <input class='radio' type="radio" name="Payment" value="Chicken">Paypal
+        </fieldset>
+
+        <textarea placeholder="Type your comments here" id="Commenys" rows="15"></textarea>
+        
+        <div id='btnarea'>
+        <input id='btn' type="submit">
+        </div>
+    </form>
+</body>
+
+</html>
+
